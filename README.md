@@ -2,38 +2,53 @@
 
 This project aims to explore Boston crime patterns and trends across time, location, and crime types.
 
-#ABOUT DATASET
-This large dataset contains basic information about the crime instances that occurred during 2015-2018 at Boston. Only data from Jan to Sep 2018 would be filtered later for the analysis within the project scope.
+# 📊 ABOUT DATASET
 
-The following tables provide a summary about each column in this dataset:
+This dataset contains basic information about crime instances that occurred in **Boston** from 2015 to 2018.
+Only data from **January to September 2018** will be filtered later for analysis within the project scope.
 
-- Table 1: crime.csv
+---
 
-| INCIDENT_NUMBER  |  text  |  Index that uniquely defines a crime/incident. 
-OFFENSE_CODE  bigint  Types of crimes/incidents (defined by code) 
-OFFENSE_CODE_GROUP  text  Descriptions about crime/incident types, e.g., robbery, vandalism, larceny , … 
-DISTRICT  text  The districts in which crime instances occurred. 
-REPORTING_AREA  int  The reporting area of a crime/incident. 
-OCCURRED_ON_DATE  text  Dates of crime/incident occurrences. 
-YEAR  int  Year of crime/incident occurrences. 
-MONTH  int  Month of crime/incident occurrences. 
-DAY_OF_WEEK  text  On what day a crime/incident occurred in a week.
-HOUR  int  The hours at which a crime/incident occurred. 
-UCR_PART  text  Crime categories proposed by the Uniform Crime Reporting (UCR) system, e.g., PART ONE, PART TWO, PART THREE…
-STREET  text  The streets on which crime instances occurred. 
-Lat  double The latitude of a crime location. 
-Long  double  The longitude of a crime location.
-Location  text  Latitude and longitude of a crime location.
+## 🗂️ Data Dictionary
 
-- Table 2: offense_codes.csv
+### Table 1: `crime.csv`
 
-CODE  int  Unique codes of crimes/incidents 
-NAME  text  Descriptions about crime/incident types
+| Column             | Type    | Description                                                                 |
+|--------------------|---------|-----------------------------------------------------------------------------|
+| `INCIDENT_NUMBER`  | text    | Index that uniquely defines a crime/incident                               |
+| `OFFENSE_CODE`     | bigint  | Type of crime/incident (defined by code)                                   |
+| `OFFENSE_CODE_GROUP` | text  | Description of crime type (e.g., robbery, vandalism, larceny, etc.)        |
+| `DISTRICT`         | text    | District where the crime occurred                                          |
+| `REPORTING_AREA`   | int     | Reporting area of the incident                                             |
+| `OCCURRED_ON_DATE` | text    | Date of the crime/incident                                                 |
+| `YEAR`             | int     | Year of occurrence                                                         |
+| `MONTH`            | int     | Month of occurrence                                                        |
+| `DAY_OF_WEEK`      | text    | Day of the week when the incident happened                                 |
+| `HOUR`             | int     | Hour of occurrence                                                         |
+| `UCR_PART`         | text    | Crime category based on UCR (e.g., PART ONE, PART TWO, PART THREE…)        |
+| `STREET`           | text    | Street name where the incident occurred                                    |
+| `Lat`              | double  | Latitude of the incident                                                   |
+| `Long`             | double  | Longitude of the incident                                                  |
+| `Location`         | text    | Combined latitude and longitude                                            |
 
-#QUESTIONS
-When do crimes most frequently occur?
-Where do crimes occur most often, and how are they distributed by location?
-What types of crimes are most common, especially in specific times or places?
+---
 
-Language used: SQL
-Skills used: Converting Data Types, Windows Functions, Aggregate Functions, Joins, CTE's, Temp Tables
+### Table 2: `offense_codes.csv`
+
+| Column   | Type | Description                            |
+|----------|------|----------------------------------------|
+| `CODE`   | int  | Unique code of crime/incident          |
+| `NAME`   | text | Description of the crime/incident type |
+
+---
+
+## ❓ QUESTIONS TO ANSWER
+
+1. **When** do crimes most frequently occur?
+2. **Where** do crimes occur most often, and how are they distributed geographically?
+3. **What types** of crimes are most common, especially in specific times or locations?
+
+---
+
+**Language used:** SQL
+**Skills used:** Converting Data Types, Windows Functions, Aggregate Functions, Joins, CTE's, Temp Tables
