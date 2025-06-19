@@ -51,4 +51,5 @@ Only data from **January to September 2018** will be filtered later for analysis
 ---
 
 **Language used:** SQL
+
 **Skills used:** Converting Data Types, Windows Functions, Aggregate Functions, Joins, CTE's, Temp Tables
