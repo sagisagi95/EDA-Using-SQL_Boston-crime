@@ -2,14 +2,14 @@
 
 This project aims to explore Boston crime patterns and trends across time, location, and crime types.
 
-ABOUT DATASET
+#ABOUT DATASET
 This large dataset contains basic information about the crime instances that occurred during 2015-2018 at Boston. Only data from Jan to Sep 2018 would be filtered later for the analysis within the project scope.
 
 The following tables provide a summary about each column in this dataset:
 
-Table 1: crime.csv
+- Table 1: crime.csv
 
-INCIDENT_NUMBER  text  Index that uniquely defines a crime/incident. 
+| INCIDENT_NUMBER  |  text  |  Index that uniquely defines a crime/incident. 
 OFFENSE_CODE  bigint  Types of crimes/incidents (defined by code) 
 OFFENSE_CODE_GROUP  text  Descriptions about crime/incident types, e.g., robbery, vandalism, larceny , … 
 DISTRICT  text  The districts in which crime instances occurred. 
@@ -25,12 +25,12 @@ Lat  double The latitude of a crime location.
 Long  double  The longitude of a crime location.
 Location  text  Latitude and longitude of a crime location.
 
-Table 2: offense_codes.csv
+- Table 2: offense_codes.csv
 
 CODE  int  Unique codes of crimes/incidents 
 NAME  text  Descriptions about crime/incident types
 
-QUESTIONS
+#QUESTIONS
 When do crimes most frequently occur?
 Where do crimes occur most often, and how are they distributed by location?
 What types of crimes are most common, especially in specific times or places?
