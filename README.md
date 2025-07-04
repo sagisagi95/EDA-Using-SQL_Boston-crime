@@ -1,8 +1,8 @@
-**[SQL] Crime Pattern Analysis in Boston (2018).**
+#[SQL] Crime Pattern Analysis in Boston (2018)
 
 This project aims to explore Boston crime patterns and trends across time, location, and crime types.
 
-# 📊 ABOUT DATASET
+## 📊 ABOUT DATASET
 
 This dataset contains basic information about crime instances that occurred in **Boston** from 2015 to 2018.
 Only data from **January to September 2018** will be filtered later for analysis within the project scope.
