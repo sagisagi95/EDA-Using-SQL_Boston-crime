@@ -1,4 +1,4 @@
-#[SQL] Crime Pattern Analysis in Boston (2018)
+# [SQL] Crime Pattern Analysis in Boston (2018)
 
 This project aims to explore Boston crime patterns and trends across time, location, and crime types.
 
